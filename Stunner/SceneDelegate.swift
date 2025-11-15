@@ -15,9 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        window?.windowScene = windowScene
-        
+        window = UIWindow(windowScene: windowScene)
         let splashVC = SplashScreenViewController()
         
         splashVC.onFinish = { [weak self] in
@@ -58,13 +56,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func goToLogin() {
         DispatchQueue.main.async {
-            let loginVC = LoginViewController()
+            let loginVC = SignupViewController()
             let nav = UINavigationController(rootViewController: loginVC)
-            
             self.window?.rootViewController = nav
-            self.window?.makeKeyAndVisible()
-
-            // Optional smooth transition animation
+            
             UIView.transition(with: self.window!,
                               duration: 0.4,
                               options: .transitionCrossDissolve,

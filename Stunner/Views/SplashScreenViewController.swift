@@ -51,7 +51,7 @@ class SplashScreenViewController: UIViewController {
     // MARK: - Setup
 
     private func setupUI() {
-        view.backgroundColor = UIColor(named: "stunner") ?? .systemYellow
+        view.backgroundColor = UIColor(named: "#181818") ?? .white
 
         view.addSubview(logoImageView)
         view.addSubview(lettersStack)

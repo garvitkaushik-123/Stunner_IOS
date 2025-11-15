@@ -13,6 +13,9 @@
 		6E925C722EC883E5003B0C9C /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E925C712EC883E5003B0C9C /* SplashScreenViewController.swift */; };
 		6E925CCF2EC88821003B0C9C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E925CCE2EC88817003B0C9C /* LoginViewModel.swift */; };
 		6E925CD12EC8889E003B0C9C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E925CD02EC8889E003B0C9C /* LoginViewController.swift */; };
+		6E925D272EC88C92003B0C9C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E925D262EC88C92003B0C9C /* SignupViewController.swift */; };
+		6E925D292EC88CAB003B0C9C /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E925D282EC88CAB003B0C9C /* OTPViewController.swift */; };
+		987F8E5C6FDD5E620AE5C6B6 /* Pods_Stunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF1D2E09E713D8C0A3B14AC /* Pods_Stunner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		6E925C712EC883E5003B0C9C /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		6E925CCE2EC88817003B0C9C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		6E925CD02EC8889E003B0C9C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6E925D262EC88C92003B0C9C /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		6E925D282EC88CAB003B0C9C /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		AB2289DA77AF31057D8D262F /* Pods-Stunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stunner.release.xcconfig"; path = "Target Support Files/Pods-Stunner/Pods-Stunner.release.xcconfig"; sourceTree = "<group>"; };
+		BEF1D2E09E713D8C0A3B14AC /* Pods_Stunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59A351F3C14F6250E2AA52E /* Pods-Stunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stunner.debug.xcconfig"; path = "Target Support Files/Pods-Stunner/Pods-Stunner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987F8E5C6FDD5E620AE5C6B6 /* Pods_Stunner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				6E925C3F2EC87914003B0C9C /* Stunner */,
 				6E925C232EC87903003B0C9C /* Products */,
+				83ED1410C4A74FF63A97371B /* Pods */,
+				DF06BEBB6EA13F53BC9952B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +67,10 @@
 		6E925C3F2EC87914003B0C9C /* Stunner */ = {
 			isa = PBXGroup;
 			children = (
-				6E925C772EC8850B003B0C9C /* Services */,
-				6E925C762EC88502003B0C9C /* ViewModels */,
 				6E925C752EC884FB003B0C9C /* Models */,
 				6E925C742EC884EF003B0C9C /* Views */,
+				6E925C762EC88502003B0C9C /* ViewModels */,
+				6E925C772EC8850B003B0C9C /* Services */,
 				6E925C3B2EC87914003B0C9C /* Assets.xcassets */,
 				6E925C3C2EC87914003B0C9C /* Info.plist */,
 				6E925C3D2EC87914003B0C9C /* SceneDelegate.swift */,
@@ -71,6 +82,8 @@
 		6E925C742EC884EF003B0C9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6E925D282EC88CAB003B0C9C /* OTPViewController.swift */,
+				6E925D262EC88C92003B0C9C /* SignupViewController.swift */,
 				6E925CD02EC8889E003B0C9C /* LoginViewController.swift */,
 				6E925C712EC883E5003B0C9C /* SplashScreenViewController.swift */,
 			);
@@ -99,6 +112,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		83ED1410C4A74FF63A97371B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C59A351F3C14F6250E2AA52E /* Pods-Stunner.debug.xcconfig */,
+				AB2289DA77AF31057D8D262F /* Pods-Stunner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF06BEBB6EA13F53BC9952B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEF1D2E09E713D8C0A3B14AC /* Pods_Stunner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,17 +136,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E925C352EC87905003B0C9C /* Build configuration list for PBXNativeTarget "Stunner" */;
 			buildPhases = (
+				E5814B81E58C960A1A284F51 /* [CP] Check Pods Manifest.lock */,
 				6E925C1E2EC87903003B0C9C /* Sources */,
 				6E925C1F2EC87903003B0C9C /* Frameworks */,
 				6E925C202EC87903003B0C9C /* Resources */,
+				07988F660F48CFAABC9A71C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Stunner;
-			packageProductDependencies = (
-			);
 			productName = Stunner;
 			productReference = 6E925C222EC87903003B0C9C /* Stunner.app */;
 			productType = "com.apple.product-type.application";
@@ -166,15 +196,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07988F660F48CFAABC9A71C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stunner/Pods-Stunner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stunner/Pods-Stunner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stunner/Pods-Stunner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5814B81E58C960A1A284F51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stunner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E925C1E2EC87903003B0C9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E925D272EC88C92003B0C9C /* SignupViewController.swift in Sources */,
 				6E925CCF2EC88821003B0C9C /* LoginViewModel.swift in Sources */,
 				6E925C402EC87914003B0C9C /* AppDelegate.swift in Sources */,
 				6E925C412EC87914003B0C9C /* SceneDelegate.swift in Sources */,
 				6E925CD12EC8889E003B0C9C /* LoginViewController.swift in Sources */,
+				6E925D292EC88CAB003B0C9C /* OTPViewController.swift in Sources */,
 				6E925C722EC883E5003B0C9C /* SplashScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +262,7 @@
 /* Begin XCBuildConfiguration section */
 		6E925C362EC87905003B0C9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C59A351F3C14F6250E2AA52E /* Pods-Stunner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -192,9 +271,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 76A6742W4M;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stunner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -219,6 +300,7 @@
 		};
 		6E925C372EC87905003B0C9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2289DA77AF31057D8D262F /* Pods-Stunner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -227,9 +309,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 76A6742W4M;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stunner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
