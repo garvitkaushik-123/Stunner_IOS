@@ -56,10 +56,10 @@
 		6E925C3F2EC87914003B0C9C /* Stunner */ = {
 			isa = PBXGroup;
 			children = (
-				6E925C772EC8850B003B0C9C /* services */,
-				6E925C762EC88502003B0C9C /* viewmodel */,
-				6E925C752EC884FB003B0C9C /* model */,
-				6E925C742EC884EF003B0C9C /* view */,
+				6E925C772EC8850B003B0C9C /* Services */,
+				6E925C762EC88502003B0C9C /* ViewModels */,
+				6E925C752EC884FB003B0C9C /* Models */,
+				6E925C742EC884EF003B0C9C /* Views */,
 				6E925C3B2EC87914003B0C9C /* Assets.xcassets */,
 				6E925C3C2EC87914003B0C9C /* Info.plist */,
 				6E925C3D2EC87914003B0C9C /* SceneDelegate.swift */,
@@ -68,35 +68,35 @@
 			path = Stunner;
 			sourceTree = "<group>";
 		};
-		6E925C742EC884EF003B0C9C /* view */ = {
+		6E925C742EC884EF003B0C9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				6E925CD02EC8889E003B0C9C /* LoginViewController.swift */,
 				6E925C712EC883E5003B0C9C /* SplashScreenViewController.swift */,
 			);
-			path = view;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		6E925C752EC884FB003B0C9C /* model */ = {
+		6E925C752EC884FB003B0C9C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				6E925CCE2EC88817003B0C9C /* LoginViewModel.swift */,
 			);
-			path = model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		6E925C762EC88502003B0C9C /* viewmodel */ = {
+		6E925C762EC88502003B0C9C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = viewmodel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		6E925C772EC8850B003B0C9C /* services */ = {
+		6E925C772EC8850B003B0C9C /* Services */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
